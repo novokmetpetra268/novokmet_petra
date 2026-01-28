@@ -1,0 +1,53 @@
+
+
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Video projekt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-logo"></div>
+    <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="omeni.html" >O meni</a></li>
+        <li><a href="vjezbe.html" >Vježbe</a></li>
+        <li><a href="video.html" class="active">Video</a></li>
+    </ul>
+</nav>
+<div class="video-box video-page" id="videoBox">
+    <video class="video2 video-page-video" id="projektVideo" controls>
+        <source src="projektni-video.mp4" type="video/mp4">
+    </video>
+</div>
+<script>
+    const videoBox = document.getElementById("videoBox");
+
+    videoBox.addEventListener("click", function () {
+        videoBox.classList.toggle("expanded-height");
+    });
+</script>
+
+    
+    <div class="text-box">
+        <p>
+           Ovaj video izrađen je u Adobe Premiere Pro. Na samom početku koristila
+       sam kinemagraf. Tijekom montaže
+        primijenila sam različite prijelaze, uključujući Additive Dissolve,
+         Cross Dissolve, Dip to White i Dip to Black, koji omogućuju glatke
+          i vizualno ugodne prijelaze između scena. Također sam koristila efekt
+           usporavanja za naglašavanje određenih dijelova videa te bojenje videa
+            u crno-bijelo radi postizanja posebne atmosfere. Video dodatno obogaćuju 
+      pomični tekst i audio, koji zajedno stvaraju skladnu i dinamičnu cjelinu.
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
